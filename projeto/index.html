@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://kit.fontawesome.com/366b9084bc.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1>Controle de Estoque</h1>
+    </header>
+
+    <main>
+
+        <div class="tittle">
+            <h2>Produtos</h2>
+            <span>Lista de produtos:</span>
+        </div>
+        <div class="card">
+            <div class="lineinput">
+                <label for="">Produto</label>
+                <input type="text"  id="produto" placeholder="Nome do produto">
+            </div>
+            <div class="lineinput">
+                <label for="">valor</label>
+                <input type="text"  id="valor" placeholder="Valor do produto">
+            </div>
+            <button onclick="produto.capturaProduto()">Salvar</button>
+            <button onclick="produto.cancelar()">Cancelar</button>
+        </div>
+
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th>ID</th>
+                    <th>Produto</th>
+                    <th>Valor</th>
+                    <th>Ações</th>
+                </thead>
+                <tbody id="tbody">
+                 
+                    
+                </tbody>
+            </table>
+        </div>
+        
+    </main>
+    
+
+
+
+
+
+    
+</body>
+</html>                        
